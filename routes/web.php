@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::post('send', ['as' => 'send.soap', 'uses' => 'SoapController@sendSoap']);
+
+Route::get('create-ticket', ['as' => 'create.ticket', 'uses' => 'SoapController@createTicket']);
